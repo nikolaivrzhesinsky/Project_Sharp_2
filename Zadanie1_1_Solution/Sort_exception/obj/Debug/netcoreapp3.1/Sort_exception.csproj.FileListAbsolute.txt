@@ -1,0 +1,14 @@
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\bin\Debug\netcoreapp3.1\Sort_exception.exe
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\bin\Debug\netcoreapp3.1\Sort_exception.deps.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\bin\Debug\netcoreapp3.1\Sort_exception.runtimeconfig.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\bin\Debug\netcoreapp3.1\Sort_exception.runtimeconfig.dev.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\bin\Debug\netcoreapp3.1\Sort_exception.dll
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\bin\Debug\netcoreapp3.1\Sort_exception.pdb
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.dll
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.pdb
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Sort_exception\obj\Debug\netcoreapp3.1\Sort_exception.genruntimeconfig.cache

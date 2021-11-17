@@ -1,0 +1,14 @@
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.exe
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.deps.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.runtimeconfig.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.runtimeconfig.dev.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.dll
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.pdb
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.dll
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.pdb
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.genruntimeconfig.cache

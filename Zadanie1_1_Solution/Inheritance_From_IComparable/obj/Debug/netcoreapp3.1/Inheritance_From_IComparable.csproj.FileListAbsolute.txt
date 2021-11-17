@@ -1,0 +1,14 @@
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\bin\Debug\netcoreapp3.1\Inheritance_From_IComparable.exe
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\bin\Debug\netcoreapp3.1\Inheritance_From_IComparable.deps.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\bin\Debug\netcoreapp3.1\Inheritance_From_IComparable.runtimeconfig.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\bin\Debug\netcoreapp3.1\Inheritance_From_IComparable.runtimeconfig.dev.json
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\bin\Debug\netcoreapp3.1\Inheritance_From_IComparable.dll
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\bin\Debug\netcoreapp3.1\Inheritance_From_IComparable.pdb
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.dll
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.pdb
+C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\Inheritance_From_IComparable\obj\Debug\netcoreapp3.1\Inheritance_From_IComparable.genruntimeconfig.cache
