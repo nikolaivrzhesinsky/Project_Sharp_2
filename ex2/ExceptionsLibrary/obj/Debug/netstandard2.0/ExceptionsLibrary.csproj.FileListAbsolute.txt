@@ -1,0 +1,9 @@
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\bin\Debug\netstandard2.0\ExceptionsLibrary.deps.json
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\bin\Debug\netstandard2.0\ExceptionsLibrary.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\bin\Debug\netstandard2.0\ExceptionsLibrary.pdb
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\obj\Debug\netstandard2.0\ExceptionsLibrary.csprojAssemblyReference.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\obj\Debug\netstandard2.0\ExceptionsLibrary.AssemblyInfoInputs.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\obj\Debug\netstandard2.0\ExceptionsLibrary.AssemblyInfo.cs
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\obj\Debug\netstandard2.0\ExceptionsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\obj\Debug\netstandard2.0\ExceptionsLibrary.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\ExceptionsLibrary\obj\Debug\netstandard2.0\ExceptionsLibrary.pdb

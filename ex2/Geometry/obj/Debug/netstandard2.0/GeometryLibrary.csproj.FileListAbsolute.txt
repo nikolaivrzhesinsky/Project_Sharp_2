@@ -1,0 +1,12 @@
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\bin\Debug\netstandard2.0\GeometryLibrary.deps.json
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\bin\Debug\netstandard2.0\GeometryLibrary.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\bin\Debug\netstandard2.0\GeometryLibrary.pdb
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\bin\Debug\netstandard2.0\ExceptionsLibrary.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\bin\Debug\netstandard2.0\ExceptionsLibrary.pdb
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.csprojAssemblyReference.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.AssemblyInfoInputs.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.AssemblyInfo.cs
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.csproj.CopyComplete
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Geometry\obj\Debug\netstandard2.0\GeometryLibrary.pdb
