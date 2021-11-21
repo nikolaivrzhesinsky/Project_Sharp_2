@@ -17,7 +17,9 @@ namespace ExceptionsLibrary
             {
                 return "Невозможно создать треугольник для указанных длин сторон";
             }
+            
         }
+        
         public override void FileWriter()
         {
             

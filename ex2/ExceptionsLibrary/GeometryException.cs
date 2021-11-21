@@ -13,10 +13,15 @@ namespace ExceptionsLibrary
 
         public string exception = "Невозможно создать фигуру";
 
-        private int[] array= new int[4];
-        private int[] setInt(params int[] sides) {
-            this.array = sides;
-            return array;  
+        
+        private int[] array = new int[4];
+        public int[] Parametrs
+        {
+            get { return array; }
+            private set
+            {
+                array = value;
+            }
         }
         public virtual void FileWriter()
         {
