@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Menu/1.0.0": {
         "dependencies": {
+          "ExceptionsLibrary": "1.0.0",
           "GeometryLibrary": "1.0.0"
         },
         "runtime": {

@@ -14,7 +14,7 @@ namespace GeometryLibrary
 
         public Quadrangle(int side1, int side2, int side3, int side4)
         {
-            if ((side1 <= 0 && side2 <= 0 && side3 <= 0 && side4<=0)&&
+            if ((side1 <= 0 || side2 <= 0 || side3 <= 0 || side4<=0)||
                 (side1 > side2 + side3+ side4 || side2 > side1 + side3+ side4 || side3 > side1 + side2+ side4 ||side4>side1+ side2+ side3+ side4))
             {
 

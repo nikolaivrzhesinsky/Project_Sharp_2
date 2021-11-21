@@ -12,3 +12,17 @@ C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\
 C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.dll
 C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.pdb
 C:\Users\HYPERPC\source\repos\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.genruntimeconfig.cache
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.exe
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.deps.json
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.runtimeconfig.json
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.runtimeconfig.dev.json
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.dll
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\bin\Debug\netcoreapp3.1\task3.pdb
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.csproj.AssemblyReference.cache
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.AssemblyInfoInputs.cache
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.AssemblyInfo.cs
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.csproj.CoreCompileInputs.cache
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.dll
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.pdb
+D:\GitHub Repos\Project_Sharp_2\Zadanie1_1_Solution\task3\obj\Debug\netcoreapp3.1\task3.genruntimeconfig.cache

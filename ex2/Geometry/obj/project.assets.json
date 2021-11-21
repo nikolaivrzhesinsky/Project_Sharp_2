@@ -195,23 +195,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\абв\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\HYPERPC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj",
       "projectName": "GeometryLibrary",
-      "projectPath": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj",
-      "packagesPath": "C:\\Users\\абв\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Geometry\\obj\\",
+      "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj",
+      "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Geometry\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\абв\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -225,8 +221,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\ExceptionsLibrary\\ExceptionsLibrary.csproj": {
-              "projectPath": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\ExceptionsLibrary\\ExceptionsLibrary.csproj"
+            "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\ExceptionsLibrary\\ExceptionsLibrary.csproj": {
+              "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\ExceptionsLibrary\\ExceptionsLibrary.csproj"
             }
           }
         }
@@ -258,7 +254,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

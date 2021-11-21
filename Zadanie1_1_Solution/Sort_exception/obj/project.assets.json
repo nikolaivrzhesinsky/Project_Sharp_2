@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\Sort_exception\\Sort_exception.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\Sort_exception\\Sort_exception.csproj",
       "projectName": "Sort_exception",
-      "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\Sort_exception\\Sort_exception.csproj",
+      "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\Sort_exception\\Sort_exception.csproj",
       "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\Sort_exception\\obj\\",
+      "outputPath": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\Sort_exception\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

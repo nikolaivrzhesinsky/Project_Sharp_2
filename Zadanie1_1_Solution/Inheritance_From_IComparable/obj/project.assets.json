@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\Inheritance_From_IComparable\\Inheritance_From_IComparable.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\Inheritance_From_IComparable\\Inheritance_From_IComparable.csproj",
       "projectName": "Inheritance_From_IComparable",
-      "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\Inheritance_From_IComparable\\Inheritance_From_IComparable.csproj",
+      "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\Inheritance_From_IComparable\\Inheritance_From_IComparable.csproj",
       "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\Inheritance_From_IComparable\\obj\\",
+      "outputPath": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\Inheritance_From_IComparable\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

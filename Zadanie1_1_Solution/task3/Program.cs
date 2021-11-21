@@ -42,6 +42,7 @@ namespace task3
             animals.Add(a2);
             animals.Add(a3);
             animals.Add(a4);
+            animals.Add(null);
 
             foreach (object i in animals)
             {

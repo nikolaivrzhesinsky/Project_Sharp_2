@@ -41,27 +41,24 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ExceptionsLibrary >= 1.0.0",
       "GeometryLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\абв\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\HYPERPC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Menu\\Menu.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Menu\\Menu.csproj",
       "projectName": "Menu",
-      "projectPath": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Menu\\Menu.csproj",
-      "packagesPath": "C:\\Users\\абв\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Menu\\obj\\",
+      "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Menu\\Menu.csproj",
+      "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Menu\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\абв\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -75,8 +72,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj": {
-              "projectPath": "C:\\Users\\абв\\Documents\\GitHub\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj"
+            "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\ExceptionsLibrary\\ExceptionsLibrary.csproj": {
+              "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\ExceptionsLibrary\\ExceptionsLibrary.csproj"
+            },
+            "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj": {
+              "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\ex2\\Geometry\\GeometryLibrary.csproj"
             }
           }
         }
@@ -105,7 +105,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,3 +16,22 @@ C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.
 C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.dll
 C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.pdb
 C:\Users\абв\Documents\GitHub\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.genruntimeconfig.cache
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\Menu.exe
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\Menu.deps.json
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\Menu.runtimeconfig.json
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\Menu.runtimeconfig.dev.json
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\Menu.dll
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\Menu.pdb
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\ExceptionsLibrary.dll
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\GeometryLibrary.dll
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\GeometryLibrary.pdb
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\bin\Debug\netcoreapp3.1\ExceptionsLibrary.pdb
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.csproj.AssemblyReference.cache
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.AssemblyInfoInputs.cache
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.AssemblyInfo.cs
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.csproj.CoreCompileInputs.cache
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.csproj.CopyComplete
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.dll
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.pdb
+D:\GitHub Repos\Project_Sharp_2\ex2\Menu\obj\Debug\netcoreapp3.1\Menu.genruntimeconfig.cache

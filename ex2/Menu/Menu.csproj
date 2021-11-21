@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ExceptionsLibrary\ExceptionsLibrary.csproj" />
     <ProjectReference Include="..\Geometry\GeometryLibrary.csproj" />
   </ItemGroup>
 

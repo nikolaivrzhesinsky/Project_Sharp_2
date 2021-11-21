@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\task3\\task3.csproj": {}
+    "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\task3\\task3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\task3\\task3.csproj": {
+    "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\task3\\task3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\task3\\task3.csproj",
+        "projectUniqueName": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\task3\\task3.csproj",
         "projectName": "task3",
-        "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\task3\\task3.csproj",
+        "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\task3\\task3.csproj",
         "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\Zadanie1_1_Solution\\task3\\obj\\",
+        "outputPath": "D:\\GitHub Repos\\Project_Sharp_2\\Zadanie1_1_Solution\\task3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
