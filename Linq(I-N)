@@ -1,0 +1,233 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Linq;
+using System.Runtime.InteropServices;
+
+namespace Linq
+{
+    //и
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] mas = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var OddNumber = new List<int>();
+            var EvenNumber = new List<int>();
+            int SumOdd = 0, SumEven =0;
+            foreach (var s in mas)
+            {
+                if (s % 2 == 0)
+                {
+                    EvenNumber.Add(s);
+                    SumEven += s;
+                }
+                else
+                {
+                    OddNumber.Add(s);
+                    SumOdd += s;
+                }
+            }
+            EvenNumber.Add(SumEven);
+            OddNumber.Add(SumOdd);
+        }
+
+        void Linq()
+        {
+            int[] mas = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var OddNumber = mas.Where(i => i % 2 == 1);
+            OddNumber.Concat(new[] { OddNumber.Sum() });
+            var EvenNumber = mas.Where(i => i % 2 == 0);
+            EvenNumber.Concat(new[] {EvenNumber.Sum()});
+        }
+    }
+    //к
+    class k
+    {
+        class Worker
+        {
+            public string Name;
+            public int Salary;
+
+        }
+        
+        void Standart()
+        {
+            var arr = new Worker[]
+            {
+                new Worker() {Name = "Петров", Salary = 100},
+                new Worker() {Name = "Сидоров", Salary = 200},
+                new Worker() {Name = "Петров", Salary = 130}
+            };
+            List<Worker> SalaryWor= new List<Worker>(){};
+            foreach (var items in arr)
+            {
+                if (check(items, SalaryWor))
+                {
+                    foreach (var worker in SalaryWor)
+                    {
+                        if (items.Name == worker.Name) 
+                        {worker.Salary += items.Salary;}
+                    }
+                }
+                else
+                {
+                    SalaryWor.Add(items);
+                }
+            }
+        }
+
+        bool check (Worker test, List<Worker> Wor)
+        {
+            foreach (var worker in Wor)
+            {
+                if (test.Name == worker.Name) return true;
+            }
+
+            return false;
+        }
+        void Linq()
+        {
+            var arr = new Worker[]
+            {
+                new Worker() {Name = "Петров", Salary = 100},
+                new Worker() {Name = "Сидоров", Salary = 200},
+                new Worker() {Name = "Петров", Salary = 130}
+            };
+            var selectedWOr = arr;
+            selectedWOr.Distinct();
+            foreach (var selWorker in selectedWOr)
+            {
+                selWorker.Salary = 0;
+                foreach (var workers in arr)
+                {
+                    if (selWorker.Name == workers.Name)
+                    {
+                        selWorker.Salary += workers.Salary;
+                    }
+                }
+            }
+        }
+    }
+    //л
+    class L
+    {   
+        void WithoutLinq()
+        {
+            int[] mas = new int[] { 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9 };
+            var Sortmas = new List<int[]>();
+            foreach (var number in mas)
+            {
+                foreach (var sortnumber in Sortmas)
+                {
+                    if (number == sortnumber[0])
+                    {
+                        sortnumber[1]++;
+                    }
+                    else
+                    {
+                        Sortmas.Add(new int[2]{number,1});
+                    }
+                }
+                int i = 0;
+                while (i <Sortmas.Count)
+                {
+                    var test = Sortmas[i];
+                    if (test[1] != 3)
+                    {
+                        Sortmas.Remove(test);
+                    }
+                    else
+                    {
+                        i++;
+                    }
+                }
+
+                var resMas = new List<int>();
+                foreach (var s in Sortmas)
+                {
+                    resMas.Add(s[1]);
+                }
+            }
+        }
+
+        static void Linq()
+        {
+            int[] mas = new int[] { 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9 };
+            mas.OrderByDescending(i => i).GroupBy(i =>i).Where(i=> i.Count() == 3).Select(i=> i);
+        }
+    }
+
+    class M
+    {
+        void withoutlinq()
+        {
+            var mas = new int[5, 2];
+            var BlessRNG = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                for (int s = 0; s < 2; s++)
+                {
+                    mas[i, s] = BlessRNG.Next();
+                }
+            }
+            for (int i = 1; i < 5; i++)
+            {
+                for (int j = 0; j < 5-i; j++)
+                {
+                    if (mas[j,0] > mas[j + 1,0])
+                    {
+                        (mas[j,0], mas[j + 1,0]) = (mas[j + 1,0], mas[j,0]);
+                    }
+                }
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                int s = i;
+                
+                while (mas[i,0] == mas[s,0])
+                {
+                    i++;
+                }
+
+                for (int k = s+1; k < i; k++)
+                {
+                    for (var j = s; j < i - k; j++)
+                    {
+                        if (mas[j, 1] > mas[j + 1, 1])
+                        {
+                            (mas[j, 1], mas[j + 1, 1]) = (mas[j + 1, 1], mas[j, 1]);
+                        }
+                    }
+                }
+            }
+            Console.WriteLine(mas);
+        }
+
+        class Num
+        {
+            public int num1;
+            public int num2;
+        }
+
+        void linq()
+        {
+            var mas = new int[2, 5];
+            //var mas = new int[5, 2];
+            var BlessRNG = new Random();
+            var Mas = new Num[]
+            {
+                new Num() {num1 = BlessRNG.Next(), num2 = BlessRNG.Next()},
+                new Num() {num1 = BlessRNG.Next(), num2 = BlessRNG.Next()},
+                new Num() {num1 = BlessRNG.Next(), num2 = BlessRNG.Next()},
+                new Num() {num1 = BlessRNG.Next(), num2 = BlessRNG.Next()},
+                new Num() {num1 = BlessRNG.Next(), num2 = BlessRNG.Next()}
+            };
+            var ResMas = Mas.OrderBy(i => i.num2).GroupBy(i => i.num1).Select(i => i.Key);
+        }
+    }
+
+};
+    
