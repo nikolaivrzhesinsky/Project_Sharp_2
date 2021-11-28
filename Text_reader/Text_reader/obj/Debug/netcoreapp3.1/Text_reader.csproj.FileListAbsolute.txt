@@ -1,0 +1,14 @@
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\bin\Debug\netcoreapp3.1\Text_reader.exe
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\bin\Debug\netcoreapp3.1\Text_reader.deps.json
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\bin\Debug\netcoreapp3.1\Text_reader.runtimeconfig.json
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\bin\Debug\netcoreapp3.1\Text_reader.runtimeconfig.dev.json
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\bin\Debug\netcoreapp3.1\Text_reader.dll
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\bin\Debug\netcoreapp3.1\Text_reader.pdb
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.dll
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.pdb
+C:\Users\HYPERPC\source\repos\Text_reader\Text_reader\obj\Debug\netcoreapp3.1\Text_reader.genruntimeconfig.cache
