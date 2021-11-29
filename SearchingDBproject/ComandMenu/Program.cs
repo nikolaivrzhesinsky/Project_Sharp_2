@@ -34,6 +34,13 @@ namespace ComandMenu
             }
             Console.WriteLine(i.ToString());
             Console.ReadLine();
+
+            string[] array = Directory.GetFiles(@"C:\Users\HYPERPC\Desktop\texts");
+            for(int o= 0; o<array.Length;o++)
+            {
+                Console.WriteLine(array[o]) ;
+            }
+            Console.ReadLine();
         }
     }
 }
