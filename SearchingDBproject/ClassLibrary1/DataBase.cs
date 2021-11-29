@@ -10,7 +10,7 @@ namespace SearchingLibrary
 {
     public class DataBase
     {
-        static string connectionString = "server=localhost;user=root;database=testc#;password=8616;";
+        static string connectionString = "server=127.0.0.1;port=3306;username=root;password=root;database=dictanary";
         MySqlConnection connection = new MySqlConnection(connectionString);
 
         public MySqlConnection getConection()

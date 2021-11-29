@@ -27,39 +27,46 @@ namespace SearchingLibrary
         {
             DataBase data = new DataBase();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DataTable table = new DataTable();
+            
             List<Freq> freqList = new List<Freq>();
 
             for (int i = 0; i < text.Count; i++)
             {
                 data.openConnection();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `library` WHERE `word`= @w", data.getConection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `words` WHERE `word`= @w", data.getConection());
                 command.Parameters.Add("@w", MySqlDbType.VarChar).Value = text[i];
                 adapter.SelectCommand = command;
+                DataTable table = new DataTable();
                 adapter.Fill(table);
+                
 
                 if (table.Rows.Count > 0)
                 {
                     data.closeConnection();
+                    
                     string word = text[i];
                     int frequency = 0;
-                    foreach (string j in text)
+                    for(int j = 0; j< text.Count; j++)
                     {
-                        if (j == word)
+                        if (text[j] == word)
                         {
                             frequency++;
-                            text.RemoveAt(text.IndexOf(j));
+                            text.RemoveAt(text.IndexOf(text[j]));
+                            j--;
+                            
                         }
                     }
                     Freq f = new Freq(word, frequency);
                     freqList.Add(f);
+                    i--;
                 }
                 else
                 {
                     data.closeConnection();
-
-
+                    
                 }
+
+                
             }
             return freqList;
         }

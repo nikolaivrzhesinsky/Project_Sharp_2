@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SearchingLibrary;
+using System.IO;
 
 namespace ComandMenu
 {
@@ -21,6 +22,17 @@ namespace ComandMenu
             //fileLogic.ShowFile();
             frequency.ShowFreq(fileLogic.GetText());
 
+            Console.ReadLine();
+            
+
+            DirectoryInfo di = new DirectoryInfo(@"C:\Users\HYPERPC\Desktop\texts");
+            int i = 0;
+            if (di.Exists)
+            {
+                // ищем в корневом каталоге
+                i += di.GetFiles().Length;
+            }
+            Console.WriteLine(i.ToString());
             Console.ReadLine();
         }
     }

@@ -31,11 +31,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\Text_reader\\Text_reader\\Text_reader.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\Project_Sharp_2\\Text_reader\\Text_reader\\Text_reader.csproj",
       "projectName": "Text_reader",
-      "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\Text_reader\\Text_reader\\Text_reader.csproj",
+      "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\Text_reader\\Text_reader\\Text_reader.csproj",
       "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\Text_reader\\Text_reader\\obj\\",
+      "outputPath": "D:\\GitHub Repos\\Project_Sharp_2\\Text_reader\\Text_reader\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\HYPERPC\\source\\repos\\Text_reader\\Library\\Library.csproj": {
-              "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\Text_reader\\Library\\Library.csproj"
+            "D:\\GitHub Repos\\Project_Sharp_2\\Text_reader\\Library\\Library.csproj": {
+              "projectPath": "D:\\GitHub Repos\\Project_Sharp_2\\Text_reader\\Library\\Library.csproj"
             }
           }
         }

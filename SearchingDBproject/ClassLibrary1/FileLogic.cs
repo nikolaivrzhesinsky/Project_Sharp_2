@@ -9,7 +9,7 @@ namespace SearchingLibrary
 {
     public class FileLogic
     {
-        private String path = @"C:\Users\абв\Desktop\test2.txt";
+        private String path = @"C:\Users\HYPERPC\Desktop\texts\t1.txt";
         private List<string> text = new List<string>();
 
         public void GetFile()
