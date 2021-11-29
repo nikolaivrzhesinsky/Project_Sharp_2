@@ -18,29 +18,24 @@ namespace ComandMenu
             FileLogic fileLogic = new FileLogic();
             Frequency frequency = new Frequency();
 
-            fileLogic.GetFile();
+            string[] array = Directory.GetFiles(@"C:\Users\HYPERPC\Desktop\texts");
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                fileLogic.GetFile(array[i]);
+                
+                frequency.GetFrequency(fileLogic.GetText(), i);
+
+            }
+            
             //fileLogic.ShowFile();
-            frequency.ShowFreq(fileLogic.GetText());
+            //frequency.ShowFreq(fileLogic.GetText());
 
             Console.ReadLine();
             
 
-            DirectoryInfo di = new DirectoryInfo(@"C:\Users\HYPERPC\Desktop\texts");
-            int i = 0;
-            if (di.Exists)
-            {
-                // ищем в корневом каталоге
-                i += di.GetFiles().Length;
-            }
-            Console.WriteLine(i.ToString());
-            Console.ReadLine();
-
-            string[] array = Directory.GetFiles(@"C:\Users\HYPERPC\Desktop\texts");
-            for(int o= 0; o<array.Length;o++)
-            {
-                Console.WriteLine(array[o]) ;
-            }
-            Console.ReadLine();
+            
+            
         }
     }
 }

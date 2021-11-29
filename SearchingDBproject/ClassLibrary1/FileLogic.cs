@@ -9,11 +9,12 @@ namespace SearchingLibrary
 {
     public class FileLogic
     {
-        private String path = @"C:\Users\HYPERPC\Desktop\texts\t1.txt";
+        //private String path = @"C:\Users\HYPERPC\Desktop\texts\t1.txt";
         private List<string> text = new List<string>();
 
-        public void GetFile()
+        public void GetFile(string path)
         {
+            text.Clear();
             using (StreamReader streamReader = new StreamReader(path))
             {
                 while (!streamReader.EndOfStream)
