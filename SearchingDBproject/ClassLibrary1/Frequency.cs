@@ -40,6 +40,17 @@ namespace SearchingLibrary
             }
             return false;
         }
+        private int GetIndex(List<Freq> freqList, string word)
+        {
+            for (int k = 0; k < freqList.Count; k++)
+            {
+                if (freqList[k].word == word)
+                {
+                    return k;
+                }
+            }
+            return 0;
+        }
 
         public List<Freq> GetFrequency(List<string> text, int textNumber)
         {
@@ -66,7 +77,16 @@ namespace SearchingLibrary
 
                     if (isInTheList(freqList, word))
                     {
+                        for (int j = 0; j < text.Count; j++)
+                        {
+                            if (text[j] == word)
+                            {
+                                freqList[GetIndex(freqList, word)].frequence[textNumber]++;
+                                text.RemoveAt(text.IndexOf(text[j]));
+                                j--;
 
+                            }
+                        }
                     }
                     else
                     {
