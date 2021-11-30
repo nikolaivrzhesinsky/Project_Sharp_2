@@ -118,16 +118,18 @@ namespace SearchingLibrary
             return freqList;
         }
 
-        /*public void ShowFreq(List<string> text)
+        public void ShowFreq()
         {
-            var objText = GetFrequency(text);
-            Console.WriteLine("Слово.............Частота");
-            for(int i = 0; i < objText.Count; i++)
+            for(int i = 0; i< freqList.Count; i++)
             {
-                string tWord = objText[i].word+"......."+objText[i].frequence;
-                Console.WriteLine(tWord) ;
+                Console.WriteLine(freqList[i].word);
+                for (int j =0; j< freqList[i].frequence.Length; j++)
+                {
+                    Console.WriteLine(freqList[i].frequence[j] + $" - Частота в {j+1} тексте");
+                }
+
             }
-        }*/
+        }
 
     }
 }

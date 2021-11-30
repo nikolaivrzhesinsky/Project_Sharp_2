@@ -27,13 +27,15 @@ namespace ComandMenu
                 frequency.GetFrequency(fileLogic.GetText(), i);
 
             }
-            
+
             //fileLogic.ShowFile();
             //frequency.ShowFreq(fileLogic.GetText());
 
+            frequency.ShowFreq();
+
             Console.ReadLine();
             
-
+            
             
             
         }
