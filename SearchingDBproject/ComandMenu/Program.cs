@@ -18,7 +18,7 @@ namespace ComandMenu
             FileLogic fileLogic = new FileLogic();
             Frequency frequency = new Frequency();
 
-            string[] array = Directory.GetFiles(@"C:\Users\HYPERPC\Desktop\texts");
+            /*string[] array = Directory.GetFiles(@"C:\Users\HYPERPC\Desktop\texts");
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -28,10 +28,13 @@ namespace ComandMenu
 
             }
 
-            //fileLogic.ShowFile();
+            fileLogic.ShowFile();
             //frequency.ShowFreq(fileLogic.GetText());
 
-            frequency.ShowFreq();
+            // frequency.ShowFreq();*/
+            fileLogic.GetFile();
+            fileLogic.ShowFile();
+
 
             Console.ReadLine();
             

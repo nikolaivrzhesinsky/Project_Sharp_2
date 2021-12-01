@@ -9,10 +9,10 @@ namespace SearchingLibrary
 {
     public class FileLogic
     {
-        //private String path = @"C:\Users\HYPERPC\Desktop\texts\t1.txt";
+        private String path = @"C:\Users\абв\Desktop\test2.txt";
         private List<string> text = new List<string>();
 
-        public void GetFile(string path)
+        public void GetFile()
         {
             text.Clear();
             using (StreamReader streamReader = new StreamReader(path))
@@ -26,6 +26,7 @@ namespace SearchingLibrary
                     }
                 }
             }
+            CheckForMarks(text);
         }
 
         public List<string> GetText()
@@ -41,6 +42,22 @@ namespace SearchingLibrary
             }
         }
 
+        private string[] punctuationMarks = { ",", ".", ":", ";"};
+        private int foundS1 = -1;
+        private void CheckForMarks(List<string>text)
+        {
+            for (int j=0;j<text.Count;j++)
+            {
+                for (int i = 0; i < punctuationMarks.Length; i++)
+                {
+                    foundS1 = text[j].IndexOf(punctuationMarks[i]);
+                    if (foundS1 != -1)
+                    {
+                        text[j] = text[j].Remove(foundS1, 1);
+                    }
+                }
+            }
+        }
 
     }
 }
