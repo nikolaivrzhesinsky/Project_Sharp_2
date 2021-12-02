@@ -6,13 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.IO;
+using System.Globalization;
 
 
 namespace SearchingLibrary
 {
     public class Freq
     {
-        static DirectoryInfo di = new DirectoryInfo(@"C:\Users\HYPERPC\Desktop\texts");
+        static DirectoryInfo di = new DirectoryInfo(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
         public static int N = di.GetFiles().Length;
         public string word;
         public int[] frequence = new int [N];
@@ -52,67 +53,91 @@ namespace SearchingLibrary
             return 0;
         }
 
+        private bool isPrefixSufix(string word, string DBword)
+        {
+            CompareInfo myComp = CultureInfo.InvariantCulture.CompareInfo;
+            bool v1 = myComp.IsPrefix(word, DBword);
+            bool v2 = myComp.IsSuffix(word, DBword);
+            if (v1 == true || v2 == true)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        private MySqlCommand command = new MySqlCommand();
+        private string sql = "";
         public List<Freq> GetFrequency(List<string> text, int textNumber)
         {
             DataBase data = new DataBase();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            int count = data.CountBD(data.getConection());      
+            //MySqlDataAdapter adapter = new MySqlDataAdapter();
 
             for (int i = 0; i < text.Count; i++)
             {
                 data.openConnection();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `words` WHERE `word`= @w", data.getConection());
-                command.Parameters.Add("@w", MySqlDbType.VarChar).Value = text[i];
-                adapter.SelectCommand = command;
-                DataTable table = new DataTable();
-                adapter.Fill(table);
-                
-
-                if (table.Rows.Count > 0)
+               
+                /*  MySqlCommand command = new MySqlCommand("SELECT * FROM `words` WHERE `word`= @w", data.getConection());
+                  command.Parameters.Add("@w", MySqlDbType.VarChar).Value = text[i];
+                  adapter.SelectCommand = command;
+                  DataTable table = new DataTable();
+                  adapter.Fill(table);
+                  */
+                for (int k = 1; k <= count; k++)
                 {
-                    data.closeConnection();
-                    
-                    string word = text[i];
-                    int[] tempFreq = new int[Freq.N];
-                    
+                    data.openConnection();
+                    sql = "SELECT word FROM library WHERE idlibrary = " + k;
+                    command.Connection = data.getConection();
+                    command.CommandText = sql;
+                    string dicWord = command.ExecuteScalar().ToString();
 
-                    if (isInTheList(freqList, word))
+                    if (isPrefixSufix(text[i],dicWord))
                     {
-                        for (int j = 0; j < text.Count; j++)
-                        {
-                            if (text[j] == word)
-                            {
-                                freqList[GetIndex(freqList, word)].frequence[textNumber]++;
-                                text.RemoveAt(text.IndexOf(text[j]));
-                                j--;
+                        data.closeConnection();
 
+                        string word = dicWord;
+                        int[] tempFreq = new int[Freq.N];
+
+
+                        if (isInTheList(freqList, word))
+                        {
+                            for (int j = 0; j < text.Count; j++)
+                            {
+                                //text[j] == word
+                                if (isPrefixSufix(text[j],word))
+                                {
+                                    freqList[GetIndex(freqList, word)].frequence[textNumber]++;
+                                    text.RemoveAt(text.IndexOf(text[j]));
+                                    j--;
+
+                                }
                             }
                         }
+                        else
+                        {
+                            for (int j = 0; j < text.Count; j++)
+                            {
+                                if (isPrefixSufix(text[j], word))
+                                {
+                                    tempFreq[textNumber]++;
+                                    text.RemoveAt(text.IndexOf(text[j]));
+                                    j--;
+
+                                }
+                            }
+                            Freq f = new Freq(word, tempFreq);
+                            freqList.Add(f);
+                        }
+
+
+                        i--;
                     }
                     else
                     {
-                        for (int j = 0; j < text.Count; j++)
-                        {
-                            if (text[j] == word)
-                            {
-                                tempFreq[textNumber]++;
-                                text.RemoveAt(text.IndexOf(text[j]));
-                                j--;
+                        data.closeConnection();
 
-                            }
-                        }
-                        Freq f = new Freq(word, tempFreq);
-                        freqList.Add(f);
                     }
-                    
-                    
-                    i--;
                 }
-                else
-                {
-                    data.closeConnection();
-                    
-                }
-
                 
             }
             return freqList;

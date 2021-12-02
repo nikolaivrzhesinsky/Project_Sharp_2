@@ -18,7 +18,7 @@ namespace ComandMenu
             FileLogic fileLogic = new FileLogic();
             Frequency frequency = new Frequency();
 
-            /*string[] array = Directory.GetFiles(@"C:\Users\HYPERPC\Desktop\texts");
+            string[] array = Directory.GetFiles(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -31,9 +31,9 @@ namespace ComandMenu
             fileLogic.ShowFile();
             //frequency.ShowFreq(fileLogic.GetText());
 
-            // frequency.ShowFreq();*/
-            fileLogic.GetFile();
-            fileLogic.ShowFile();
+            frequency.ShowFreq();
+           // fileLogic.GetFile();
+            //fileLogic.ShowFile();
 
 
             Console.ReadLine();

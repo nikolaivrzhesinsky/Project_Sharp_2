@@ -10,7 +10,7 @@ namespace SearchingLibrary
 {
     public class DataBase
     {
-        static string connectionString = "server=127.0.0.1;port=3306;username=root;password=root;database=dictanary";
+        static string connectionString = "server=localhost;user=root;database=testc#;password=8616;";
         MySqlConnection connection = new MySqlConnection(connectionString);
 
         public MySqlConnection getConection()
@@ -33,6 +33,23 @@ namespace SearchingLibrary
                 connection.Close();
             }
         }
+
+        private MySqlCommand command = new MySqlCommand();
+        private string sql = "";
+        private int count;
+        public int CountBD(MySqlConnection mySqlConnection)
+        {
+            openConnection();
+            sql = "SELECT MAX(idlibrary) FROM library";
+            command.Connection = mySqlConnection;
+            command.CommandText = sql;
+            string countStr = command.ExecuteScalar().ToString();
+            count = int.Parse(countStr);
+            closeConnection();
+
+            return count;
+        }
+
 
     }
 }
