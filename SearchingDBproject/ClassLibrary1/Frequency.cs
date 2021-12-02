@@ -77,12 +77,6 @@ namespace SearchingLibrary
             {
                 data.openConnection();
                
-                /*  MySqlCommand command = new MySqlCommand("SELECT * FROM `words` WHERE `word`= @w", data.getConection());
-                  command.Parameters.Add("@w", MySqlDbType.VarChar).Value = text[i];
-                  adapter.SelectCommand = command;
-                  DataTable table = new DataTable();
-                  adapter.Fill(table);
-                  */
                 for (int k = 1; k <= count; k++)
                 {
                     data.openConnection();
@@ -127,10 +121,12 @@ namespace SearchingLibrary
                             }
                             Freq f = new Freq(word, tempFreq);
                             freqList.Add(f);
+                            
                         }
 
 
                         i--;
+                        break;
                     }
                     else
                     {

@@ -5,3 +5,10 @@
 server=localhost;user=root;database=testc#;password=8616;
 SELECT MAX(idusers) FROM library
 C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза\text1.txt
+
+/*  MySqlCommand command = new MySqlCommand("SELECT * FROM `words` WHERE `word`= @w", data.getConection());
+                  command.Parameters.Add("@w", MySqlDbType.VarChar).Value = text[i];
+                  adapter.SelectCommand = command;
+                  DataTable table = new DataTable();
+                  adapter.Fill(table);
+                  */
