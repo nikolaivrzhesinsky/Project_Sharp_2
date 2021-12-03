@@ -27,6 +27,7 @@ namespace SearchingLibrary
                 }
             }
             CheckForMarks(text);
+            ToLowerReg(text);
         }
 
         public List<string> GetText()
@@ -42,7 +43,7 @@ namespace SearchingLibrary
             }
         }
 
-        private string[] punctuationMarks = { ",", ".", ":", ";"};
+        private string[] punctuationMarks = { ",", ".", ":", ";","!","?","#","*","{","}",""};
         private int foundS1 = -1;
         private void CheckForMarks(List<string>text)
         {
@@ -56,6 +57,14 @@ namespace SearchingLibrary
                         text[j] = text[j].Remove(foundS1, 1);
                     }
                 }
+            }
+        }
+
+        private void ToLowerReg(List<string> text)
+        {
+            for(int i = 0; i < text.Count; i++)
+            {
+                text[i] = text[i].ToLower();
             }
         }
 
