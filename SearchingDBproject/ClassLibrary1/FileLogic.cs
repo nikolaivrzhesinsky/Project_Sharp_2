@@ -43,7 +43,7 @@ namespace SearchingLibrary
             }
         }
 
-        private string[] punctuationMarks = { ",", ".", ":", ";","!","?","#","*","{","}",""};
+        private string[] punctuationMarks = { ",", ".", ":", ";","!","?","#","*","{","}","(",")"};
         private int foundS1 = -1;
         private void CheckForMarks(List<string>text)
         {

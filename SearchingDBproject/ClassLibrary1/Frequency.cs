@@ -22,13 +22,16 @@ namespace SearchingLibrary
             this.word = word;
             this.frequence = frequence;
         }
+
+      
+       
        
     }
 
     public class Frequency
     {
         List<Freq> freqList = new List<Freq>();
-
+       
         private bool isInTheList(List<Freq> freqList, string word)
         {
             
@@ -143,14 +146,47 @@ namespace SearchingLibrary
         {
             for(int i = 0; i< freqList.Count; i++)
             {
-                Console.WriteLine(freqList[i].word);
+                Console.Write($" {freqList[i].word}| ");
                 for (int j =0; j< freqList[i].frequence.Length; j++)
                 {
-                    Console.WriteLine(freqList[i].frequence[j] + $" - Частота в {j+1} тексте");
+                    Console.Write($"{freqList[i].frequence[j]} ");
                 }
+                Console.WriteLine("\n");
 
             }
         }
+
+        static DirectoryInfo di2 = new DirectoryInfo(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
+        public static int N = di2.GetFiles().Length;
+        public int[,] FreqMatrix;
+        public int[,] MakeFreqMatrix()
+        {
+            FreqMatrix = new int[freqList.Count, N];
+            for (int i = 0; i < freqList.Count; i++)
+            {
+               for(int j = 0; j < N; j++)
+                {
+                    FreqMatrix[i, j] = freqList[i].frequence[j];
+                }
+            }
+            return FreqMatrix;
+        }
+
+        public void ShowFreqMatrix()
+        {
+            int height = FreqMatrix.GetLength(0);
+            int width = FreqMatrix.GetLength(1);
+
+            for(int i = 0; i < height; i++)
+            {
+                for(int j=0;j<width;j++)
+                {
+                    Console.Write($"{FreqMatrix[i,j]} ");
+                }
+                Console.WriteLine("\n");
+            }
+        }
+        
 
     }
 }

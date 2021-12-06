@@ -20,20 +20,20 @@ namespace ComandMenu
 
             string[] array = Directory.GetFiles(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
 
+           
+
             for (int i = 0; i < array.Length; i++)
             {
                 fileLogic.GetFile(array[i]);
-                
+                fileLogic.ShowFile();
                 frequency.GetFrequency(fileLogic.GetText(), i);
 
             }
-
-            fileLogic.ShowFile();
-            //frequency.ShowFreq(fileLogic.GetText());
-
-            frequency.ShowFreq();
-           // fileLogic.GetFile();
-            //fileLogic.ShowFile();
+            frequency.MakeFreqMatrix();
+            frequency.ShowFreqMatrix();
+           // frequency.ShowFreq();
+           
+            
 
 
             Console.ReadLine();

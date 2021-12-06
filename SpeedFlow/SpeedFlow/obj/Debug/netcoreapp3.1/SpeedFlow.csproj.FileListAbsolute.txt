@@ -1,0 +1,13 @@
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.csprojAssemblyReference.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.AssemblyInfoInputs.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.AssemblyInfo.cs
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.csproj.CoreCompileInputs.cache
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\bin\Debug\netcoreapp3.1\SpeedFlow.exe
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\bin\Debug\netcoreapp3.1\SpeedFlow.deps.json
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\bin\Debug\netcoreapp3.1\SpeedFlow.runtimeconfig.json
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\bin\Debug\netcoreapp3.1\SpeedFlow.runtimeconfig.dev.json
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\bin\Debug\netcoreapp3.1\SpeedFlow.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\bin\Debug\netcoreapp3.1\SpeedFlow.pdb
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.dll
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.pdb
+C:\Users\абв\Documents\GitHub\Project_Sharp_2\SpeedFlow\SpeedFlow\obj\Debug\netcoreapp3.1\SpeedFlow.genruntimeconfig.cache
