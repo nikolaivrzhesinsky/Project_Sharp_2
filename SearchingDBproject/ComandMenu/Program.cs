@@ -16,7 +16,7 @@ namespace ComandMenu
         {
             DataBase dataBase = new DataBase();
             FileLogic fileLogic = new FileLogic();
-            Frequency frequency = new Frequency();
+            FrequencyAndSentimentAnalys frequency = new FrequencyAndSentimentAnalys();
 
             string[] array = Directory.GetFiles(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
 

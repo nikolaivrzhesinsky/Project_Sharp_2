@@ -37,10 +37,10 @@ namespace SearchingLibrary
         private MySqlCommand command = new MySqlCommand();
         private string sql = "";
         private int count;
-        public int CountBD(MySqlConnection mySqlConnection)
+        public int CountBD(MySqlConnection mySqlConnection, string sqlCommand)
         {
             openConnection();
-            sql = "SELECT MAX(idlibrary) FROM library";
+            sql = sqlCommand;
             command.Connection = mySqlConnection;
             command.CommandText = sql;
             string countStr = command.ExecuteScalar().ToString();

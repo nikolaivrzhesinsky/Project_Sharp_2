@@ -28,7 +28,7 @@ namespace SearchingLibrary
        
     }
 
-    public class Frequency
+    public class FrequencyAndSentimentAnalys
     {
         List<Freq> freqList = new List<Freq>();
        
@@ -70,10 +70,12 @@ namespace SearchingLibrary
 
         private MySqlCommand command = new MySqlCommand();
         private string sql = "";
+
         public List<Freq> GetFrequency(List<string> text, int textNumber)
         {
             DataBase data = new DataBase();
-            int count = data.CountBD(data.getConection());      
+            sql = "SELECT MAX(idlibrary) FROM library";
+            int count = data.CountBD(data.getConection(),sql);      
             //MySqlDataAdapter adapter = new MySqlDataAdapter();
 
             for (int i = 0; i < text.Count; i++)
@@ -159,6 +161,7 @@ namespace SearchingLibrary
         static DirectoryInfo di2 = new DirectoryInfo(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
         public static int N = di2.GetFiles().Length;
         public int[,] FreqMatrix;
+
         public int[,] MakeFreqMatrix()
         {
             FreqMatrix = new int[freqList.Count, N];
@@ -186,7 +189,33 @@ namespace SearchingLibrary
                 Console.WriteLine("\n");
             }
         }
-        
 
+       
+        public List<int> SentResult = new List<int>();
+        int SumSent = 0;
+        public void GetSentimantAnalys(List<string>text)
+        {
+            DataBase data = new DataBase();
+            sql = "SELECT MAX(idwords_raiting) FROM words_raiting";
+            int count = data.CountBD(data.getConection(), sql);
+
+            for (int i = 0; i < text.Count; i++)
+            {
+                data.openConnection();
+
+                for (int k = 1; k <= count; k++)
+                {
+
+                }
+            }
+
+
+
+        }
     }
+
+   
+
+
+   
 }
