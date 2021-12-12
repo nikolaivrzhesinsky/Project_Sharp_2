@@ -68,6 +68,17 @@ namespace SearchingLibrary
             else return false;
         }
 
+        private bool isPrefix(string word, string DBword)
+        {
+            CompareInfo myComp = CultureInfo.InvariantCulture.CompareInfo;
+            bool v1 = myComp.IsPrefix(word, DBword);
+            if (v1 == true )
+            {
+                return true;
+            }
+            else return false;
+        }
+
         private MySqlCommand command = new MySqlCommand();
         private string sql = "";
 
@@ -197,15 +208,29 @@ namespace SearchingLibrary
         {
             DataBase data = new DataBase();
             sql = "SELECT MAX(idwords_raiting) FROM words_raiting";
-            int count = data.CountBD(data.getConection(), sql);
+            int countDB = data.CountBD(data.getConection(), sql);
 
             for (int i = 0; i < text.Count; i++)
             {
                 data.openConnection();
 
-                for (int k = 1; k <= count; k++)
+                for (int k = 1; k <= countDB; k++)
                 {
+                    sql = "SELECT word FROM words_raiting WHERE idwords_raiting = " + k;
+                    command.Connection = data.getConection();
+                    command.CommandText = sql;
+                    string dicWord = command.ExecuteScalar().ToString();
 
+                    if (isPrefix(text[i], dicWord))
+                    {
+                        data.closeConnection();
+                        sql= "SELECT mean FROM words_raiting WHERE idwords_raiting = " + k;
+                        command.Connection = data.getConection();
+                        command.CommandText = sql;
+                        string mean= command.ExecuteScalar().ToString();
+                        int meanInt = Int32.Parse(mean);
+                        SumSent += meanInt;
+                    }
                 }
             }
 
