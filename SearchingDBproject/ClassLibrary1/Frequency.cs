@@ -21,11 +21,7 @@ namespace SearchingLibrary
         {
             this.word = word;
             this.frequence = frequence;
-        }
-
-      
-       
-       
+        }      
     }
 
     public class FrequencyAndSentimentAnalys
@@ -202,9 +198,10 @@ namespace SearchingLibrary
         }
 
        
-        public List<int> SentResult = new List<int>();
+        public List<float> SentResult = new List<float>();
+        int counterSentWords = 0;
         int SumSent = 0;
-        public void GetSentimantAnalys(List<string>text)
+        public List<float> GetSentimantAnalys(List<string>text)
         {
             DataBase data = new DataBase();
             sql = "SELECT MAX(idwords_raiting) FROM words_raiting";
@@ -230,13 +227,36 @@ namespace SearchingLibrary
                         string mean= command.ExecuteScalar().ToString();
                         int meanInt = Int32.Parse(mean);
                         SumSent += meanInt;
+                        counterSentWords++;
+                        k = 1;
+                        break;
                     }
                 }
             }
-
-
+            SentResult.Add(SumSent / counterSentWords);
+            return SentResult;
 
         }
+
+        public void ShowSentAnalys()
+        {
+            for(int i = 0; i < SentResult.Count; i++)
+            {
+                if(SentResult[i]>=-1 && SentResult[i] <= 1)
+                {
+                    Console.WriteLine($"Текст {i} имеет тональность \"нейтральная\""); 
+                }
+                if (SentResult[i] < -1)
+                {
+                    Console.WriteLine($"Текст {i} имеет тональность \"отрицательная\"");
+                }
+                if (SentResult[i] > 1)
+                {
+                    Console.WriteLine($"Текст {i} имеет тональность \"положительная\"");
+                }
+            }
+        }
+
     }
 
    
