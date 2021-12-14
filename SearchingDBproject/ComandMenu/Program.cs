@@ -26,12 +26,17 @@ namespace ComandMenu
             {
                 fileLogic.GetFile(array[i]);
                 fileLogic.ShowFile();
+                frequency.GetSentimantAnalys(fileLogic.GetText(), i);
                 frequency.GetFrequency(fileLogic.GetText(), i);
 
             }
             frequency.MakeFreqMatrix();
             frequency.ShowFreqMatrix();
-           // frequency.ShowFreq();
+
+            frequency.ShowFreq();
+
+            frequency.ShowSentAnalys();
+          
            
             
 

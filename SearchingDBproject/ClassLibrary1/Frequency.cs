@@ -199,9 +199,10 @@ namespace SearchingLibrary
 
        
         public List<float> SentResult = new List<float>();
-        int counterSentWords = 0;
-        int SumSent = 0;
-        public List<float> GetSentimantAnalys(List<string>text)
+        private int counterSentWords = 0;
+        private float SumSent = 0;
+        private float meanInt = 0;
+        public List<float> GetSentimantAnalys(List<string>text, int j)
         {
             DataBase data = new DataBase();
             sql = "SELECT MAX(idwords_raiting) FROM words_raiting";
@@ -220,20 +221,25 @@ namespace SearchingLibrary
 
                     if (isPrefix(text[i], dicWord))
                     {
-                        data.closeConnection();
+                       
                         sql= "SELECT mean FROM words_raiting WHERE idwords_raiting = " + k;
                         command.Connection = data.getConection();
                         command.CommandText = sql;
                         string mean= command.ExecuteScalar().ToString();
-                        int meanInt = Int32.Parse(mean);
+                        meanInt = float.Parse(mean);
                         SumSent += meanInt;
                         counterSentWords++;
                         k = 1;
                         break;
                     }
+                    
                 }
+                data.closeConnection();
             }
             SentResult.Add(SumSent / counterSentWords);
+            SumSent = 0;
+            counterSentWords = 0;
+
             return SentResult;
 
         }
@@ -244,15 +250,15 @@ namespace SearchingLibrary
             {
                 if(SentResult[i]>=-1 && SentResult[i] <= 1)
                 {
-                    Console.WriteLine($"Текст {i} имеет тональность \"нейтральная\""); 
+                    Console.WriteLine($"Текст {i+1} имеет тональность \"нейтральная\""); 
                 }
                 if (SentResult[i] < -1)
                 {
-                    Console.WriteLine($"Текст {i} имеет тональность \"отрицательная\"");
+                    Console.WriteLine($"Текст {i+1} имеет тональность \"отрицательная\"");
                 }
                 if (SentResult[i] > 1)
                 {
-                    Console.WriteLine($"Текст {i} имеет тональность \"положительная\"");
+                    Console.WriteLine($"Текст {i+1} имеет тональность \"положительная\"");
                 }
             }
         }
