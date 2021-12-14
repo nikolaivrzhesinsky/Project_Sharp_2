@@ -248,7 +248,7 @@ namespace SearchingLibrary
         {
             for(int i = 0; i < SentResult.Count; i++)
             {
-                if(SentResult[i]>=-1 && SentResult[i] <= 1)
+                if(SentResult[i]>=-1 && SentResult[i] <= 1 &&(SumSent==0))
                 {
                     Console.WriteLine($"Текст {i+1} имеет тональность \"нейтральная\""); 
                 }
