@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace DataLayer_BuisnessLayer
 {
@@ -217,12 +218,24 @@ namespace DataLayer_BuisnessLayer
 
             return Connections.Connects(maceMatrix, normMatrix, txtMatrix); ;
         }
+
+        private static MySqlCommand command = new MySqlCommand();
+        private static string sql = "";
         public static void Print(List<Tuple<int, string>> Base)
         {
-            foreach(Tuple<int, string> i in Base)
+            DataBase data = new DataBase();
+            data.openConnection();
+
+            foreach (Tuple<int, string> i in Base)
             {
-                Console.WriteLine(i.Item1 + " " + i.Item2);
+                sql= "SELECT field FROM library WHERE word = '" + i.Item2+"'";
+                command.Connection = data.getConection();
+                command.CommandText = sql;
+                string dicField = command.ExecuteScalar().ToString();
+                Console.WriteLine("Текст "+i.Item1 + " " +i.Item2+" "+dicField );
             }
+
+            data.closeConnection();
         }
     }
 }
