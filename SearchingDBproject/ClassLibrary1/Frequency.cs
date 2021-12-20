@@ -227,7 +227,21 @@ namespace SearchingLibrary
                         command.CommandText = sql;
                         string mean= command.ExecuteScalar().ToString();
                         meanInt = float.Parse(mean);
-                        SumSent += meanInt;
+                        if (i > 0)
+                        {
+                            if (text[i - 1] == "не")
+                            {
+                                SumSent -= meanInt;
+                            }
+                            else
+                            {
+                                SumSent += meanInt;
+                            }
+                        }
+                        else
+                        {
+                            SumSent += meanInt;
+                        }
                         counterSentWords++;
                         k = 1;
                         break;
