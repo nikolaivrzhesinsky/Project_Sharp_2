@@ -207,5 +207,22 @@ namespace DataLayer_BuisnessLayer
 
             return res;
         }
+        public static List<Tuple<int, string>> CreateResult(double[,] U, double[,] S, double[,] Vt, List<string> word_List)
+        {
+            var maceMatrix = new Matrix_compression(U, word_List);
+            var normMatrix = new Matrix_compression(S);
+            var txtMatrix = new Matrix_compression(Vt);
+
+
+
+            return Connections.Connects(maceMatrix, normMatrix, txtMatrix); ;
+        }
+        public static void Print(List<Tuple<int, string>> Base)
+        {
+            foreach(Tuple<int, string> i in Base)
+            {
+                Console.WriteLine(i.Item1 + " " + i.Item2);
+            }
+        }
     }
 }
