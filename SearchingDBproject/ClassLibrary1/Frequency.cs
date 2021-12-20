@@ -13,7 +13,7 @@ namespace SearchingLibrary
 {
     public class Freq
     {
-        static DirectoryInfo di = new DirectoryInfo(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
+        static DirectoryInfo di = new DirectoryInfo(@"texts_for_analysis");
         public static int N = di.GetFiles().Length;
         public string word;
         public int[] frequence = new int [N];
@@ -27,7 +27,7 @@ namespace SearchingLibrary
     public class FrequencyAndSentimentAnalys
     {
         List<Freq> freqList = new List<Freq>();
-       
+        List<string> word_list = new List<string>();
         private bool isInTheList(List<Freq> freqList, string word)
         {
             
@@ -165,13 +165,13 @@ namespace SearchingLibrary
             }
         }
 
-        static DirectoryInfo di2 = new DirectoryInfo(@"C:\Users\абв\Documents\GitHub\Project_Sharp_2\SearchingDBproject\Тексты для АНАЛиза");
+        static DirectoryInfo di2 = new DirectoryInfo(@"texts_for_analysis");//Поменять
         public static int N = di2.GetFiles().Length;
-        public int[,] FreqMatrix;
+        public double[,] FreqMatrix;
 
-        public int[,] MakeFreqMatrix()
+        public double[,] MakeFreqMatrix()
         {
-            FreqMatrix = new int[freqList.Count, N];
+            FreqMatrix = new double[freqList.Count, N];
             for (int i = 0; i < freqList.Count; i++)
             {
                for(int j = 0; j < N; j++)
@@ -275,6 +275,15 @@ namespace SearchingLibrary
                     Console.WriteLine($"Текст {i+1} имеет тональность \"положительная\"");
                 }
             }
+        }
+        public List<string> Word_List()
+        {
+            for (int i = 0; i < freqList.Count; i++)
+            {
+                word_list.Add(freqList[i].word);
+            }
+
+            return word_list;
         }
 
     }

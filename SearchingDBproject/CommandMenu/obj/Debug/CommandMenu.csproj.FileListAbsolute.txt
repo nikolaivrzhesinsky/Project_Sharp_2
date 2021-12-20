@@ -1,0 +1,3 @@
+D:\GitHub Repos\Project_Sharp_2\SearchingDBproject\CommandMenu\obj\Debug\CommandMenu.csproj.AssemblyReference.cache
+D:\GitHub Repos\Project_Sharp_2\SearchingDBproject\CommandMenu\obj\Debug\CommandMenu.csproj.CoreCompileInputs.cache
+D:\GitHub Repos\Project_Sharp_2\SearchingDBproject\CommandMenu\obj\Debug\CommandMenu.exe.config
