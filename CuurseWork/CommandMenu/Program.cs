@@ -29,15 +29,9 @@ namespace CommandMenu
             Singularity svd = new Singularity();
             svd.Decomposition(frequency.MakeFreqMatrix(), out double[,] U, out double[,] S, out double[,] Vt, 2);
 
-            var maceMatrix = new Matrix_compression(U, frequency.Word_List());
-            Connections.Print(maceMatrix);
-            var normMatrix = new Matrix_compression(S);
-            var txtMatrix = new Matrix_compression(Vt);
-            var resTuple = Connections.Connects(maceMatrix, normMatrix, txtMatrix);
-            foreach (Tuple<int, string> item in resTuple)
-            {
-                Console.WriteLine(item.Item1 + " " + item.Item2);
-            };
+            var resTuple = DataLayer_BuisnessLayer.Connections.CreateResult(U, S, Vt, frequency.Word_List());
+
+            DataLayer_BuisnessLayer.Connections.Print(resTuple);
             frequency.ShowSentAnalys();
             Console.ReadKey();
         }
