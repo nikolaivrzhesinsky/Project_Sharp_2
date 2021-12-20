@@ -1,0 +1,12 @@
+C:\Users\HYPERPC\source\repos\LSA\Spreadsheet\bin\Debug\Spreadsheet.dll
+C:\Users\HYPERPC\source\repos\LSA\Spreadsheet\bin\Debug\Spreadsheet.pdb
+C:\Users\HYPERPC\source\repos\LSA\Spreadsheet\obj\Debug\Spreadsheet.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\LSA\Spreadsheet\obj\Debug\Spreadsheet.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\LSA\Spreadsheet\obj\Debug\Spreadsheet.dll
+C:\Users\HYPERPC\source\repos\LSA\Spreadsheet\obj\Debug\Spreadsheet.pdb
+C:\Users\HYPERPC\source\repos\LSA_test\Spreadsheet\bin\Debug\Spreadsheet.dll
+C:\Users\HYPERPC\source\repos\LSA_test\Spreadsheet\bin\Debug\Spreadsheet.pdb
+C:\Users\HYPERPC\source\repos\LSA_test\Spreadsheet\obj\Debug\Spreadsheet.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\LSA_test\Spreadsheet\obj\Debug\Spreadsheet.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\LSA_test\Spreadsheet\obj\Debug\Spreadsheet.dll
+C:\Users\HYPERPC\source\repos\LSA_test\Spreadsheet\obj\Debug\Spreadsheet.pdb
