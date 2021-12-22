@@ -22,16 +22,16 @@ namespace CommandMenu
             {
                 fileLogic.GetFile(array[i]);
                 frequency.GetSentimantAnalys(fileLogic.GetText(), i);
-                frequency.GetFrequency(fileLogic.GetText(), i);
+                //frequency.GetFrequency(fileLogic.GetText(), i);
 
             }
 
-            Singularity svd = new Singularity();
-            svd.Decomposition(frequency.MakeFreqMatrix(), out double[,] U, out double[,] S, out double[,] Vt, 2);
+            //Singularity svd = new Singularity();
+            //svd.Decomposition(frequency.MakeFreqMatrix(), out double[,] U, out double[,] S, out double[,] Vt, 2);
 
-            var resTuple = DataLayer_BuisnessLayer.Connections.CreateResult(U, S, Vt, frequency.Word_List());
+            //var resTuple = DataLayer_BuisnessLayer.Connections.CreateResult(U, S, Vt, frequency.Word_List());
 
-            DataLayer_BuisnessLayer.Connections.Print(resTuple);
+            //DataLayer_BuisnessLayer.Connections.Print(resTuple);
             frequency.ShowSentAnalys();
             Console.ReadKey();
         }

@@ -250,6 +250,10 @@ namespace DataLayer_BuisnessLayer
             if (counterSentWords!=0) {
                 SentResult.Add(SumSent / counterSentWords);
             }
+            else
+            {
+                SentResult.Add(0);
+            }
             SumSent = 0;
             counterSentWords = 0;
 
