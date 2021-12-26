@@ -115,7 +115,9 @@ namespace DataLayer_BuisnessLayer
                 Console.WriteLine();
             }
         }
-        public static List<Tuple<int, string>> Connects(Matrix_compression wordMatrix, Matrix_compression normalizedMatrix, Matrix_compression txtMatrix)
+        public static List<Tuple<int, string>> Connects(Matrix_compression wordMatrix, 
+                                                        Matrix_compression normalizedMatrix, 
+                                                        Matrix_compression txtMatrix)
         {
 
             var resMatrix = new Matrix_compression(wordMatrix.row, txtMatrix.col, wordMatrix.colName);
