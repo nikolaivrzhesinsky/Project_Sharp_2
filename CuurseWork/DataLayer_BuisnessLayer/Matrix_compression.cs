@@ -104,17 +104,6 @@ namespace DataLayer_BuisnessLayer
     }
     public class Connections
     {
-        public static void Print(Matrix_compression Base)
-        {
-            for (int i = 0; i < Base.row; i++)
-            {
-                for (int k = 0; k < Base.col; k++)
-                {
-                    Console.Write(Base[i, k] + " ");
-                }
-                Console.WriteLine();
-            }
-        }
         public static List<Tuple<int, string>> Connects(Matrix_compression wordMatrix, 
                                                         Matrix_compression normalizedMatrix, 
                                                         Matrix_compression txtMatrix)
