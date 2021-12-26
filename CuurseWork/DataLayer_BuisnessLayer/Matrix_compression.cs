@@ -109,7 +109,9 @@ namespace DataLayer_BuisnessLayer
                                                         Matrix_compression txtMatrix)
         {
 
-            var resMatrix = new Matrix_compression(wordMatrix.row, txtMatrix.col, wordMatrix.colName);
+            var resMatrix = new Matrix_compression(wordMatrix.row, 
+                                                   txtMatrix.col, 
+                                                   wordMatrix.colName);
             for (int i = 0; i < wordMatrix.row; i++)
             {
                 for (int k = 0; k < txtMatrix.col; k++)
@@ -117,7 +119,8 @@ namespace DataLayer_BuisnessLayer
                     resMatrix[i, k] = 0;
                 }
             }
-            resMatrix = Matrix_compression.MultiForDist(wordMatrix, txtMatrix);
+            resMatrix = Matrix_compression.MultiForDist(wordMatrix, 
+                                                        txtMatrix);
             for (int i = 0; i < resMatrix.row; i++)
             {
                 for (int k = 0; k < resMatrix.col; k++)
@@ -125,8 +128,11 @@ namespace DataLayer_BuisnessLayer
                     resMatrix[i, k] = Math.Round(resMatrix[i, k], 6);
                 }
             }
+            
             var resTuple = new List<Tuple<int, string>>();
+            
             Tuple<int, string> tmp;
+            
             for (int i = 0; i < resMatrix.col; i++)
             {
                 int id = 0;
@@ -137,9 +143,11 @@ namespace DataLayer_BuisnessLayer
                         id = k;
                     }
                 }
-                tmp = new Tuple<int, string>(i + 1, wordMatrix.colName[id]);
+                tmp = new Tuple<int, string>(i + 1, 
+                                             wordMatrix.colName[id]);
                 resTuple.Add(tmp);
             }
+            
             return resTuple;
         }
 
