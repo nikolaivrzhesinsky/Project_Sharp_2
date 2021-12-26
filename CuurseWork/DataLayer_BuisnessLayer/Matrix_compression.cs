@@ -157,7 +157,7 @@ namespace DataLayer_BuisnessLayer
 
         public static List<Tuple<int, string>> CreateResult(double[,] U, double[,] S, double[,] Vt, List<string> word_List)
         {
-            var maceMatrix = new Matrix_compression(U, word_List);
+            var wordMatrix = new Matrix_compression(U, word_List);
             var normMatrix = new Matrix_compression(S);
             var txtMatrix = new Matrix_compression(Vt);
 
