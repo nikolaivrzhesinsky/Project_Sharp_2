@@ -223,6 +223,7 @@ namespace DataLayer_BuisnessLayer
                         command.Connection = data.getConection();
                         command.CommandText = sql;
                         string mean = command.ExecuteScalar().ToString();
+                        mean = Replacer(mean);
                         meanInt = float.Parse(mean);
                         if (i > 0)
                         {
@@ -259,6 +260,18 @@ namespace DataLayer_BuisnessLayer
 
             return SentResult;
 
+        }
+        private string Replacer(string line)
+        {
+            char[] array = line.ToCharArray(0, line.Length);
+            for (int i = 0; i < line.Length; i++)
+            {
+                if (array[i] == '.')
+                    array[i] = ',';
+
+            }
+            string newline = new string(array);
+            return newline;
         }
 
         public void ShowSentAnalys()
