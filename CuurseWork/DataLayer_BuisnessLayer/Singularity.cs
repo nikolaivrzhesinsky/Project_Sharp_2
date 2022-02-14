@@ -252,7 +252,6 @@ namespace DataLayer_BuisnessLayer
 		}
 		public void Decomposition(double[,] matrix, out double[,] U, out double[,] S, out double[,] Vt, int count_of_usable_rows)
 		{
-
 			double[,] transposed_matrix = Matrix_Transpose(matrix);
 			double[,] AtA = Matrix_multiplier(transposed_matrix, matrix); //матрица для S и Vt
 			double[] eigenvalues = new double[AtA.GetLength(0)];

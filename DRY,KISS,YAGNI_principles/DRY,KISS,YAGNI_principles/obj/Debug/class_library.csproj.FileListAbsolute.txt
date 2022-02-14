@@ -1,0 +1,6 @@
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\DRY,KISS,YAGNI_principles\bin\Debug\DRY,KISS,YAGNI_principles.dll
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\DRY,KISS,YAGNI_principles\bin\Debug\DRY,KISS,YAGNI_principles.pdb
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\DRY,KISS,YAGNI_principles\obj\Debug\class_library.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\DRY,KISS,YAGNI_principles\obj\Debug\class_library.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\DRY,KISS,YAGNI_principles\obj\Debug\DRY,KISS,YAGNI_principles.dll
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\DRY,KISS,YAGNI_principles\obj\Debug\DRY,KISS,YAGNI_principles.pdb

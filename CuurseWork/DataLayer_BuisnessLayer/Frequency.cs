@@ -147,7 +147,29 @@ namespace DataLayer_BuisnessLayer
             }
             return freqList;
         }
-
+        private List<Freq> DelOnneInFreq(List<Freq> temp)
+        {
+            int SumTextWord = 0;
+            for (int i = 0; i < temp.Count;)
+            {
+                SumTextWord = 0;
+                for (int j = 0; j < temp[i].frequence.Length; j++)
+                {
+                    SumTextWord += temp[i].frequence[j];
+                    if (SumTextWord > 1)
+                        break;
+                }
+                if (SumTextWord == 1)
+                {
+                    temp.RemoveAt(i);
+                    SumTextWord = 0;
+                    i--;
+                }
+                i++;
+                SumTextWord = 0;
+            }
+            return temp;
+        }
         public void ShowFreq()
         {
             for (int i = 0; i < freqList.Count; i++)
@@ -168,6 +190,7 @@ namespace DataLayer_BuisnessLayer
 
         public double[,] MakeFreqMatrix()
         {
+            freqList = DelOnneInFreq(freqList);
             FreqMatrix = new double[freqList.Count, N];
             for (int i = 0; i < freqList.Count; i++)
             {

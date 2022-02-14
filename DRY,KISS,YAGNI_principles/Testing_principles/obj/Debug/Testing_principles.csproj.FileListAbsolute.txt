@@ -1,0 +1,10 @@
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\bin\Debug\Testing_principles.exe.config
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\bin\Debug\Testing_principles.exe
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\bin\Debug\Testing_principles.pdb
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\obj\Debug\Testing_principles.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\obj\Debug\Testing_principles.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\obj\Debug\Testing_principles.exe
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\obj\Debug\Testing_principles.pdb
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\bin\Debug\DRY,KISS,YAGNI_principles.dll
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\bin\Debug\DRY,KISS,YAGNI_principles.pdb
+C:\Users\HYPERPC\source\repos\DRY,KISS,YAGNI_principles\Testing_principles\obj\Debug\Testing_principles.csproj.CopyComplete

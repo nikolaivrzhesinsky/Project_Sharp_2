@@ -119,8 +119,7 @@ namespace DataLayer_BuisnessLayer
                     resMatrix[i, k] = 0;
                 }
             }
-            //resMatrix = Matrix_compression.MultiMatrix(wordMatrix, normalizedMatrix);
-            //resMatrix = Matrix_compression.MultiMatrix(resMatrix, txtMatrix);
+            
             resMatrix = Matrix_compression.MultiForDist(wordMatrix, txtMatrix);
             for (int i = 0; i < resMatrix.row; i++)
             {
@@ -134,6 +133,19 @@ namespace DataLayer_BuisnessLayer
             
             Tuple<int, string> tmp;
 
+            for (int i = 0; i < resMatrix.col; i++)
+            {
+                int id = 0;
+                for (int k = 1; k < resMatrix.row; k++)
+                {
+                    if (resMatrix[id, i] < resMatrix[k, i])
+                    {
+                        id = k;
+                    }
+                }
+                tmp = new Tuple<int, string>(i + 1, wordMatrix.colName[id]);
+                resTuple.Add(tmp);
+            }
             //for (int i = 0; i < resMatrix.col; i++)
             //{
             //    int id = 0;
@@ -147,19 +159,6 @@ namespace DataLayer_BuisnessLayer
             //    tmp = new Tuple<int, string>(i + 1, wordMatrix.colName[id]);
             //    resTuple.Add(tmp);
             //}
-            for (int i = 0; i < resMatrix.col; i++)
-            {
-                int id = 0;
-                for (int k = 1; k < resMatrix.row; k++)
-                {
-                    if (resMatrix[id, i] > resMatrix[k, i])
-                    {
-                        id = k;
-                    }
-                }
-                tmp = new Tuple<int, string>(i + 1, wordMatrix.colName[id]);
-                resTuple.Add(tmp);
-            }
 
             return resTuple;
         }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class_library", "DRY,KISS,YAGNI_principles\class_library.csproj", "{F38196AB-8113-4A9F-B1F3-009931312AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing_principles", "Testing_principles\Testing_principles.csproj", "{EB949DF6-E46E-4C43-B0F4-76C7AC4EB4C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F38196AB-8113-4A9F-B1F3-009931312AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38196AB-8113-4A9F-B1F3-009931312AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38196AB-8113-4A9F-B1F3-009931312AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38196AB-8113-4A9F-B1F3-009931312AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB949DF6-E46E-4C43-B0F4-76C7AC4EB4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB949DF6-E46E-4C43-B0F4-76C7AC4EB4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB949DF6-E46E-4C43-B0F4-76C7AC4EB4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB949DF6-E46E-4C43-B0F4-76C7AC4EB4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32F81DC7-11BB-4830-8049-C14CD600DDFF}
+	EndGlobalSection
+EndGlobal
